@@ -46,9 +46,9 @@ const Contact = () => {
 
         {/* Contact Info */}
         <div className="mt-12 text-center text-sm text-gray-400">
-          <p>Email: <a href="mailto:you@example.com" className="text-[#01d3e2]">you@example.com</a></p>
-          <p>Phone: <span className="text-[#01d3e2]">+91 12345 67890</span></p>
-          <p>Location: <span className="text-[#01d3e2]">New Delhi, India</span></p>
+          <p>Email: <a href="surajshaw17082004@gmail.com" className="text-[#01d3e2]">surajshaw17082004@gmail.com</a></p>
+          <p>Phone: <span className="text-[#01d3e2]">+91 6290315511</span></p>
+          <p>Location: <span className="text-[#01d3e2]">Kolkata, India</span></p>
         </div>
       </div>
     </div>

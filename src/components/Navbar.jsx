@@ -30,11 +30,11 @@ const Navbar = () => {
 
             {/* Mobile Menu Drawer */}
             {menuOpen && (
-                <ul className="absolute top-16 left-0 w-full bg-dark text-center flex flex-col space-y-4 py-4 md:hidden font-medium text-lg border-t border-gray-700">
+                <ul className="absolute top-16 left-0 w-full bg-dark text-center flex flex-col space-y-4 py-4 md:hidden font-medium text-lg border-t border-gray-700 bg-[#20242d]">
                     <li><Link to="/" onClick={toggleMenu} className="hover:text-primary">Home</Link></li>
                     <li><Link to="/about" onClick={toggleMenu} className="hover:text-primary">About</Link></li>
                     <li><Link to="/skills" onClick={toggleMenu} className="hover:text-primary">Skills</Link></li>
-                    <li><Link to="/Projects" onClick={toggleMenu} className="hover:text-primary">Portfolio</Link></li>
+                    <li><Link to="/Projects" onClick={toggleMenu} className="hover:text-primary">Projects</Link></li>
                     <li><Link to="/contact" onClick={toggleMenu} className="hover:text-primary">Contact</Link></li>
                 </ul>
             )}

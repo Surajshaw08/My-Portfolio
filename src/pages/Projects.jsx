@@ -3,45 +3,45 @@ import React from 'react';
 const projects = [
   {
     title: 'Password Manager App',
-    image: '/images/password-manager.png',
-    description: 'A secure password manager with login, signup, and encrypted storage.',
-    github: 'https://github.com/yourname/password-manager',
-    demo: 'https://your-password-manager.vercel.app',
+    image: '/passone.png',
+    description: 'Developed PassOne, a secure and responsive MERN-based Password Manager using React.js, Node.js, Express.js, MongoDB, and Tailwind CSS. Built a secure platform that allows users to store, retrieve, and manage passwords with 100% data encryption and 95% faster UI rendering using optimized state management and API handling.',
+    github: 'https://github.com/Surajshaw08/PassOne_password-_manager-',
+    demo: 'https://pass-one-password-manager.vercel.app/',
   },
   {
-    title: 'Portfolio Website',
-    image: '/images/portfolio.png',
-    description: 'A modern developer portfolio made with React and Tailwind CSS.',
-    github: 'https://github.com/yourname/portfolio',
-    demo: 'https://yourportfolio.vercel.app',
+    title: 'Hungry buddy',
+    image: '/hungry.png',
+    description: 'Food ordering webapp made with React and Tailwind CSS.',
+    github: 'https://github.com/Surajshaw08/Hungry-buddy',
+    demo: 'https://hungry-buddy.vercel.app/',
   },
   {
-    title: 'Blog App',
-    image: '/images/blog-app.png',
-    description: 'A full-stack blog platform with admin dashboard and MySQL database.',
+    title: 'One 1 joke',
+    image: '/extension.png',
+    description: 'Developed a Chrome extension that dynamically fetches jokes from an API and displays them in an interactive interface. Includes a "Next" button for seamless navigation between jokes, providing users with an engaging and lightweight experience. Designed for optimal performance and ease of use.',
     github: 'https://github.com/yourname/blog-app',
     demo: 'https://yourblogapp.netlify.app',
   },
   {
     title: 'Weather App',
-    image: '/images/weather.png',
-    description: 'A live weather app using OpenWeatherMap API and React.',
-    github: 'https://github.com/yourname/weather-app',
-    demo: 'https://yourweatherapp.vercel.app',
+    image: '/AI.png',
+    description: 'AI landing page',
+    github: 'https://github.com/Surajshaw08/AI-landing-page',
+    demo: 'https://ai-landing-page-eta-seven.vercel.app/',
   },
   {
-    title: 'E-commerce Store',
-    image: '/images/ecommerce.png',
-    description: 'An e-commerce website with cart, checkout, and payment gateway.',
-    github: 'https://github.com/yourname/ecommerce-store',
-    demo: 'https://yourstore.vercel.app',
+    title: 'Tic-Tac-Toe Chrome Extension',
+    image: '/tic.png',
+    description: 'A Tic-Tac-Toe game built as a Chrome Extension where a player competes against an AI-powered opponent. The AI uses the Minimax algorithm to make smart moves, making it challenging to win.',
+    github: 'https://github.com/Surajshaw08/Tic-Tac-Toe-Chrome-Extension-',
+    demo: 'https://github.com/Surajshaw08/Tic-Tac-Toe-Chrome-Extension-',
   },
   {
-    title: 'Chat App',
-    image: '/images/chat-app.png',
-    description: 'A real-time chat application using Socket.IO and Node.js.',
-    github: 'https://github.com/yourname/chat-app',
-    demo: 'https://yourchatapp.vercel.app',
+    title: 'BMI calculator',
+    image: 'tic.png',
+    description: 'BMI calculator webpage',
+    github: 'https://github.com/Surajshaw08/BMI-calculator-',
+    demo: 'https://github.com/Surajshaw08/BMI-calculator-',
   },
 ];
 
@@ -58,12 +58,18 @@ const Projects = () => {
 
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, idx) => (
-            <div key={idx} className="bg-[#1e293b] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition">
-              <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-              <div className="p-5 text-left">
-                <h3 className="text-xl font-semibold text-[#01d3e2] mb-2">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
-                <div className="flex space-x-4">
+            <div key={idx} className="bg-[#1e293b] rounded-xl overflow-hidden shadow-lg hover:scale-105 transition flex flex-col h-[500px] pt-4">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-contain"
+              />
+              <div className="p-5 flex flex-col justify-between flex-grow">
+                <div>
+                  <h3 className="text-xl font-semibold text-[#01d3e2] mb-2">{project.title}</h3>
+                  <p className="text-gray-300 mb-4 line-clamp-4">{project.description}</p>
+                </div>
+                <div className="flex space-x-4 mt-auto">
                   <a
                     href={project.github}
                     target="_blank"

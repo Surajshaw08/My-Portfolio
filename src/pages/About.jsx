@@ -25,21 +25,21 @@ const About = () => {
           <div className="md:w-2/3">
             <h3 className="text-2xl font-semibold mb-4 text-[#01d3e2]">I'm Suraj Kumar</h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              I'm a passionate <span className="text-white font-medium">Frontend Developer</span> with a knack for crafting clean, elegant, and responsive interfaces.
-              I love turning ideas into visually appealing and functional products.
+              I'm a passionate <span className="text-white font-medium">Full Stack Developer</span> with a focus on the MERN stack — MongoDB, Express.js, React, and Node.js. I specialize in building clean, elegant, and fully responsive web applications that don’t just look great but also perform seamlessly.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              With a strong foundation in HTML, CSS, JavaScript, React, and Tailwind CSS,
-              I build applications that are not only good-looking but also optimized for performance and user experience.
+              From crafting dynamic, user-friendly interfaces with React and Tailwind CSS, to building powerful backends and APIs using Node.js and Express, I love turning ideas into full-fledged digital products. I write clean, maintainable code and aim to deliver optimized, scalable solutions that provide real value to users.
+
+              Whether it's a simple frontend or a complex full-stack application, I bring a creative mindset, strong technical skills, and a constant hunger to learn and grow as a developer.
             </p>
             <div className="mt-6">
-              <a
-                href="/Suraj_Resume.pdf"
-                className="bg-[#01d3e2] text-black font-semibold px-6 py-2 rounded-full hover:scale-105 transition"
-                download
-              >
-                Download Resume
-              </a>
+            <a
+            href="/mynew2.pdf"
+            download
+            className="bg-[#01d3e2] text-black px-8 py-2 rounded-full font-semibold hover:scale-105 transition inline-block"
+          >
+            Download CV
+          </a>
             </div>
           </div>
         </div>
