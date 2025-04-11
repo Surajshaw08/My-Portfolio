@@ -15,12 +15,12 @@ const Skills = () => {
         <h2 className="text-3xl font-bold">
           My <span className="text-red-500">Skills</span>
         </h2>
-        <p className="text-gray-300 mt-2 text-sm md:text-base">
+        {/* <p className="text-gray-300 mt-2 text-sm md:text-base">
           Writing code using languages :{' '}
           <span className="text-white">
             C++, C#, Java, HTML, CSS, JS, Dart, PHP, MYSQL, and Python.
           </span>
-        </p>
+        </p> */}
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 justify-items-center">
