@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Skills = () => {
   return (
@@ -27,7 +28,7 @@ const Skills = () => {
             <br /><br />
             I'm confident with tools like Git and GitHub, and fluent in both English and Hindi.
             <br /><br />
-            Visit my <a href="https://www.linkedin.com/in/surajkrshaw08/" target="_blank" rel="noopener noreferrer" className="text-[#01d3e2] underline">LinkedIn</a> or <a href="/contact" className="text-[#01d3e2] underline">contact me</a> for more.
+            Visit my <a href="https://www.linkedin.com/in/surajkrshaw08/" target="_blank" rel="noopener noreferrer" className="text-[#01d3e2] underline">LinkedIn</a> or <Link to="/contact" className="text-[#01d3e2] underline">contact me</Link>
           </p>
         </div>
 
