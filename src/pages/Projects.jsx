@@ -2,6 +2,13 @@ import React from 'react';
 
 const projects = [
   {
+    title: 'Krishi Bazar – Direct Market Access Platform for Farmers',
+    image: 'krishi.png',
+    description: 'Built a scalable MERN stack platform connecting farmers with buyers, increasing profit margins by 20% by eliminating middlemen.',
+    github: 'https://krishi-bazar-ten.vercel.app/',
+    demo: 'https://krishi-bazar-ten.vercel.app/',
+  },
+  {
     title: 'Password Manager App',
     image: '/passone.png',
     description: 'Developed PassOne, a secure and responsive MERN-based Password Manager using React.js, Node.js, Express.js, MongoDB, and Tailwind CSS. Built a secure platform that allows users to store, retrieve, and manage passwords with 100% data encryption and 95% faster UI rendering using optimized state management and API handling.',
@@ -23,9 +30,9 @@ const projects = [
     demo: 'https://yourblogapp.netlify.app',
   },
   {
-    title: 'Weather App',
+    title: 'AI-Landing Page',
     image: '/AI.png',
-    description: 'AI landing page',
+    description: 'Designed a modern, responsive website using React to showcase AI services, resulting in a 50% faster load time compare to similar templates.',
     github: 'https://github.com/Surajshaw08/AI-landing-page',
     demo: 'https://ai-landing-page-eta-seven.vercel.app/',
   },
@@ -36,13 +43,7 @@ const projects = [
     github: 'https://github.com/Surajshaw08/Tic-Tac-Toe-Chrome-Extension-',
     demo: 'https://github.com/Surajshaw08/Tic-Tac-Toe-Chrome-Extension-',
   },
-  {
-    title: 'BMI calculator',
-    image: 'tic.png',
-    description: 'BMI calculator webpage',
-    github: 'https://github.com/Surajshaw08/BMI-calculator-',
-    demo: 'https://github.com/Surajshaw08/BMI-calculator-',
-  },
+  
 ];
 
 const Projects = () => {
