@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   const socialLinks = [
@@ -23,10 +24,26 @@ const Home = () => {
       <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
         <h2 className="text-lg sm:text-xl font-medium">Hello, It's Me</h2>
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mt-2">Suraj Kr Shaw</h1>
-        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-2">
-          And I'm a <span className="text-[#01d3e2]">Full Stack Developer</span>
-          <span className="text-[#01d3e2] animate-pulse ml-1">|</span>
+
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mt-2 text-[#01d3e2]">
+          <TypeAnimation
+            sequence={[
+              "Full Stack Developer",
+              2000,
+              "MERN Stack Developer",
+              2000,
+              "React.js Specialist",
+              2000,
+              "Backend Enthusiast",
+              2000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+            className="text-[#01d3e2]"
+          />
         </h3>
+
         <p className="mt-4 text-gray-400 text-sm sm:text-base leading-relaxed max-w-lg">
           A passionate MERN Stack Developer who builds full-stack web apps that are fast,
           responsive, and clean. From frontends with React & Tailwind CSS to powerful backends
