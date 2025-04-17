@@ -1,18 +1,13 @@
 import React from 'react';
-import {
-  FaGithub,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-  FaPhoneAlt,
-} from 'react-icons/fa';
+import {FaGithub,FaInstagram,FaLinkedinIn,FaPhoneAlt,} from 'react-icons/fa';
+import { IoIosMail } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   const socialLinks = [
     { icon: FaGithub, url: 'https://github.com/Surajshaw08' },
-    { icon: FaTwitter, url: 'https://twitter.com/yourhandle' },
+    { icon: IoIosMail, url: 'https://krsurajshaw17082004@gmail.com' },
     { icon: FaInstagram, url: 'https://www.instagram.com/ig_suraj08/' },
     { icon: FaLinkedinIn, url: 'https://www.linkedin.com/in/surajkrshaw08/' },
     { icon: FaPhoneAlt, url: 'tel:+6290315511' },

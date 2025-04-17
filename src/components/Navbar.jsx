@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation(); // 👈 Get current route path
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
@@ -17,11 +18,31 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 text-lg font-medium">
-          <li><Link to="/" className="hover:text-[#01d3e2] transition">Home</Link></li>
-          <li><Link to="/about" className="hover:text-[#01d3e2] transition">About</Link></li>
-          <li><Link to="/skills" className="hover:text-[#01d3e2] transition">Skills</Link></li>
-          <li><Link to="/Projects" className="hover:text-[#01d3e2] transition">Projects</Link></li>
-          <li><Link to="/contact" className="hover:text-[#01d3e2] transition">Contact</Link></li>
+          <li>
+            <Link to="/" className="hover:text-[#01d3e2] transition">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-[#01d3e2] transition">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/skills" className="hover:text-[#01d3e2] transition">
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="/Projects" className="hover:text-[#01d3e2] transition">
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-[#01d3e2] transition">
+              Contact
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -45,11 +66,61 @@ const Navbar = () => {
         }`}
       >
         <ul className="flex flex-col mt-20 space-y-6 px-6 text-lg font-medium">
-          <li><Link to="/" onClick={closeMenu} className="hover:text-[#01d3e2]">Home</Link></li>
-          <li><Link to="/about" onClick={closeMenu} className="hover:text-[#01d3e2]">About</Link></li>
-          <li><Link to="/skills" onClick={closeMenu} className="hover:text-[#01d3e2]">Skills</Link></li>
-          <li><Link to="/Projects" onClick={closeMenu} className="hover:text-[#01d3e2]">Projects</Link></li>
-          <li><Link to="/contact" onClick={closeMenu} className="hover:text-[#01d3e2]">Contact</Link></li>
+          <li>
+            <Link
+              to="/"
+              onClick={closeMenu}
+              className={`hover:text-[#01d3e2] px-3 py-2 rounded-md transition ${
+                location.pathname === '/' ? 'bg-[#01d3e2] text-black' : ''
+              }`}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              onClick={closeMenu}
+              className={`hover:text-[#01d3e2] px-3 py-2 rounded-md transition ${
+                location.pathname === '/about' ? 'bg-[#01d3e2] text-black' : ''
+              }`}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/skills"
+              onClick={closeMenu}
+              className={`hover:text-[#01d3e2] px-3 py-2 rounded-md transition ${
+                location.pathname === '/skills' ? 'bg-[#01d3e2] text-black' : ''
+              }`}
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/Projects"
+              onClick={closeMenu}
+              className={`hover:text-[#01d3e2] px-3 py-2 rounded-md transition ${
+                location.pathname === '/Projects' ? 'bg-[#01d3e2] text-black' : ''
+              }`}
+            >
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              onClick={closeMenu}
+              className={`hover:text-[#01d3e2] px-3 py-2 rounded-md transition ${
+                location.pathname === '/contact' ? 'bg-[#01d3e2] text-black' : ''
+              }`}
+            >
+              Contact
+            </Link>
+          </li>
         </ul>
       </div>
     </>
